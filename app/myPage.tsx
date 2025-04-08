@@ -51,7 +51,9 @@ export default MyPage;
 const styles = StyleSheet.create({
     container: { flex: 1 },
     profileContainer: {
+        flexDirection: 'row',
         alignItems: 'center',
+        paddingHorizontal: 12,
         paddingVertical: 24,
         backgroundColor: '#f9f9f9',
     },
@@ -62,7 +64,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#ddd',
     },
     username: {
-        marginTop: 8,
+        marginLeft: 16,
         fontSize: 16,
         fontWeight: 'bold',
     },
@@ -83,10 +85,14 @@ const styles = StyleSheet.create({
     flexGrow: {
         flex: 1,
     },
+
     logoutContainer: {
         backgroundColor: '#eee',
-        paddingVertical: 40,
+        paddingVertical: 16,
         paddingHorizontal: 16,
+        alignItems: 'flex-end',
+        justifyContent: 'flex-start',
+        height: 100,
     },
 
     logoutButtonWrapper: {
