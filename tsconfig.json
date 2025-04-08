@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@modal/*": [
+        "modal/*"
+      ]
+    },
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-native",
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "extends": "expo/tsconfig.base"
+}
