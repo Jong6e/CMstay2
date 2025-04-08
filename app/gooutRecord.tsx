@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Header from '../src/components/header';
 import Footer from '../src/components/footer';
+import withNoDoubleTapZoom from '@hoc/withNoDoubleTapZoom';
 
 const GooutRecord = () => {
     return (
@@ -15,7 +16,7 @@ const GooutRecord = () => {
     );
 };
 
-export default GooutRecord;
+export default withNoDoubleTapZoom(GooutRecord);
 
 const styles = StyleSheet.create({
     container: { flex: 1 },
